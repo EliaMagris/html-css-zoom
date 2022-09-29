@@ -12,6 +12,11 @@
     text-align: center;
 }
 
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+
 body{
     background-color: black;
     height: 100vh;
@@ -88,17 +93,10 @@ footer{
     display: flex;
     justify-content: space-between;
     font-size: 1.5rem;
-}
-
-.mute-logo{
-    /* display: flex;
-    align-items: center;
-    flex-direction: column; */
+    padding: 10px;
 }
 
 .left-part{
-    display: flex;
-    align-items: center;
     flex-basis: 20%;
 }
 
@@ -114,8 +112,6 @@ footer{
 /* parte centrale */
 
 .central{
-    display: flex;
-    align-items: center;
     flex-basis: 60%;
     justify-content: center;
 }
@@ -140,8 +136,6 @@ footer{
 /* parte finale */
 
 .right-part{
-    display: flex;
-    align-items: center;
     flex-basis: 20%;
     flex-direction: row-reverse;
 }
