@@ -20,8 +20,9 @@ body{
 }
 
 main{
-    border: 1px solid yellow;
     flex-grow: 1;
+    overflow: auto;
+    padding: 0 25px;
 }
 
 header{
@@ -80,12 +81,13 @@ main{
     background-color: rgba(100,113,125, 0.5);
 }
 
+/* inizio footer */
+
 footer{
     background-color: rgb(34,34,34);
     display: flex;
     justify-content: space-between;
     font-size: 1.5rem;
-    padding: 10px;
 }
 
 .mute-logo{
@@ -97,6 +99,33 @@ footer{
 .left-part{
     display: flex;
     align-items: center;
+    flex-basis: 20%;
+}
+
+.fa-chevron-up{
+    font-size: 0.6rem;
+    margin: 0 10px;
+}
+
+.left-part span{
+    font-size: 0.9rem;
+}
+
+/* parte centrale */
+
+.central{
+    display: flex;
+    align-items: center;
+    flex-basis: 60%;
+    justify-content: center;
+}
+
+.central span{
+    font-size: 0.9rem;
+}
+
+.item-icon{
+    margin: 0 10px;
 }
 
 .fa-chevron-down{
@@ -104,6 +133,22 @@ footer{
     margin: 0 10px;
 }
 
-.left-part span{
+.fa-share-from-square{
+    color: rgb(75,200,0);
+}
+
+/* parte finale */
+
+.right-part{
+    display: flex;
+    align-items: center;
+    flex-basis: 20%;
+    flex-direction: row-reverse;
+}
+
+.end-meeting{
+    color: red;
     font-size: 0.9rem;
+    background-color: rgb(74,74,74);
+    padding: 20px;
 }
